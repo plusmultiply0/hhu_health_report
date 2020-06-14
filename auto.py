@@ -8,12 +8,12 @@ import time
 
 def health_report():
     try:
-        driver = webdriver.Chrome(executable_path='PATH of chromedriver')
+        driver = webdriver.Chrome(executable_path='PATH of chromedriver')# you should change this!
         driver.get("http://ids.hhu.edu.cn/amserver/UI/Login?goto=http://form.hhu.edu.cn/pdc/form/list")
 # user id
-        driver.find_element(By.ID, "IDToken1").send_keys("your login id")
+        driver.find_element(By.ID, "IDToken1").send_keys("your login id")# you should change this!
 # password and enter
-        driver.find_element(By.ID, "IDToken2").send_keys("your password"+Keys.ENTER)
+        driver.find_element(By.ID, "IDToken2").send_keys("your password"+Keys.ENTER)# you should change this!
 # wait for page loaded
         sleep(2)
 #click the element
@@ -27,7 +27,7 @@ def health_report():
         driver.execute_script("var finish = document.querySelector('#saveBtn');finish.click();")
         sleep(3)
 # wait for page loaded
-        nowdate = time.strftime('%Y.%m.%d %H:%M:%S',time.localtime(time.time()))
+        nowdate = str(time.strftime('%Y.%m.%d %H:%M:%S',time.localtime(time.time())))
 # save successful shot
         driver.get_screenshot_as_file(nowdate+".png")
         sleep(1)

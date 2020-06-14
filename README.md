@@ -1,8 +1,8 @@
 # 河海大学2020健康填报--自动化脚本
 
-此脚本可配合 windows 系统程序实现自动化[健康填报](http://ids.hhu.edu.cn/amserver/UI/Login?goto=http://form.hhu.edu.cn/pdc/form/list)。免除每日打开 app/网页 点击的麻烦。
+此脚本可配合 windows 系统程序实现自动化[健康填报](http://ids.hhu.edu.cn/amserver/UI/Login?goto=http://form.hhu.edu.cn/pdc/form/list)。免除每日打开 app/网页/微信扫码 点击的麻烦。
 
-根据下面的描述，可以实现每日定时完成健康填报提交,并根据生成提交成功截图。
+完成下面的描述的要求，可以实现每日定时完成健康填报提交,并根据生成提交成功截图。
 
 ## 前置准备
 
@@ -20,17 +20,7 @@
 pip install selenium
 ```
 
-**设置定时启动**
-
-1. 在 windows 上搜索 **任务计划程序** ，点击创建基本任务。
-
-2. 填写名称和描述，下一步
-3. 设置为每天
-4. 选择启动程序
-5. 程序和脚本处填写 python.exe 的文件路径，添加参数处填写 auto.py 的文件路径，起始于填写一个文件路径。
-6. 完成
-
-**修改程序**
+**修改脚本**
 
 打开auto.py, 
 
@@ -39,6 +29,16 @@ pip install selenium
 2. 修改 your login id 为你的登陆ID（学号）
 
 3. 修改 your password 为你的登陆密码
+
+**设置定时启动**
+
+1. 在 windows 上搜索 **任务计划程序** ，点击创建基本任务。
+
+2. 填写名称和描述，下一步
+3. 设置为每天
+4. 选择启动程序
+5. 程序和脚本处填写 python.exe 的文件路径，添加参数处填写 auto.py 的文件路径，起始于填写一个文件路径（用来存放成功填报的截图）。
+6. 完成，之后 windows 会根据设定的时间执行程序
 
 **查看结果**
 
