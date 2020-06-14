@@ -27,9 +27,9 @@ def health_report():
         driver.execute_script("var finish = document.querySelector('#saveBtn');finish.click();")
         sleep(3)
 # wait for page loaded
-        nowdate = str(time.strftime('%Y.%m.%d %H:%M:%S',time.localtime(time.time())))
+        nowdate = str(time.strftime('%Y.%m.%d %H.%M.%S',time.localtime(time.time())))+".png"
 # save successful shot
-        driver.get_screenshot_as_file(nowdate+".png")
+        driver.get_screenshot_as_file(nowdate)
         sleep(1)
         driver.quit()
     except Exception:
