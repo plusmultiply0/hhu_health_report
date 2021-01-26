@@ -1,5 +1,9 @@
 # 河海大学 2020-2021 健康填报--自动化脚本
 
+> 此脚本读取用window读取环境变量文件时，存在问题。作者无暇顾及，故归档repo
+
+> 如需使用，请使用旧脚本并修改以适配你的Python解释器
+
 此脚本可配合 windows 系统程序实现自动化[健康填报](http://ids.hhu.edu.cn/amserver/UI/Login?goto=http://form.hhu.edu.cn/pdc/form/list)。免除每日打开 app/网页/微信扫码 点击的麻烦。
 
 完成下面的描述的要求，可以实现每日定时完成健康填报提交,并根据生成提交成功截图。
