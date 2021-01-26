@@ -1,2 +1,5 @@
 yq.py
 .env
+png/
+myvenv/
+.vscode/

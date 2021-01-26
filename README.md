@@ -10,7 +10,7 @@
 
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjw8pH3BRAXEiwA1pvMsX0LaGtiAauQozaMwIx7QvDJPlK1SDK45oIoCLowZxP_pbLlj4vu8xoC3nQQAvD_BwE&gclsrc=aw.ds) 下载Chrome
 - [Chrome deriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) 根据Chrome版本，下载对应的Chrome driver
-- [python](https://www.python.org/downloads/) 下载python
+- [python](https://www.python.org/downloads/) 下载python3
 
 以上程序下载安装后，请配置好环境路径
 
