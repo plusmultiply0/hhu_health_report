@@ -1,4 +1,4 @@
-# 河海大学2020健康填报--自动化脚本
+# 河海大学 2020-2021 健康填报--自动化脚本
 
 此脚本可配合 windows 系统程序实现自动化[健康填报](http://ids.hhu.edu.cn/amserver/UI/Login?goto=http://form.hhu.edu.cn/pdc/form/list)。免除每日打开 app/网页/微信扫码 点击的麻烦。
 
@@ -20,15 +20,15 @@
 pip install selenium
 ```
 
-**修改脚本**
+**创建环境变量文件**
 
-打开auto.py, 
+当前目录下，创建一个名为 .env 的文件，按照如下格式填写：
 
-1. 修改 PATH of chromedriver 为你的Chrome driver 安装路径，并修改路径中 \ 为 \\\
+```
+USER_PASSWORD=你的密码
 
-2. 修改 your login id 为你的登陆ID（学号）
-
-3. 修改 your password 为你的登陆密码
+USER_ID=你的学号
+```
 
 **设置定时启动**
 
